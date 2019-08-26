@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOGIN SUCCESSED</title>
+    </head>
+    <body>
+       로그인 성공 <a href="/logout">로그아웃</a>
+       <div id="user-session"></div>
+       <script>
+           const getCookie = function(name) {
+               const value = document.cookie.match(
+                   '(^|;) ?' +name+ '=([^;]*)(;|$)'
+               );
+                return value? value[2] : null;
+           }
+           document.getElementById('user-session').innerText = getCookie('user-session');
+       </script>
+    </body>
+</html>
