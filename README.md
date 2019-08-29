@@ -4,7 +4,7 @@ This server is satety from SQL Injection.
 you don't need to use special algorithm for prevent SQL Injection.
 prepared statement will rescue you.
 
-so, the if you use <safety code> that mean you are using prepared statement. 
+so, the if you use &lt;safety code> that mean you are using prepared statement. 
   
 and if you want to change this server to weak about SQL Injection.<br>
 modify the code that sends the query on line number 33-35 as follows. <br>
